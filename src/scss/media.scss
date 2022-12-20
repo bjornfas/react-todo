@@ -1,0 +1,26 @@
+
+@media (max-width: 1200px) {
+    .tasks__list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 767px) {
+    .add-task {
+        &__input {
+            min-width: auto;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .tasks {
+        padding: 40px 0px;
+        &__item {
+            min-width: 100%;
+            font-size: 14px;
+            padding: 20px 10px;
+        }
+    }
+}
+

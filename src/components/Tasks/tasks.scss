@@ -1,0 +1,31 @@
+
+@import "../../scss/variables";
+
+.tasks {
+    padding: 50px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        min-width: 450px;
+        max-width: 450px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:hover {
+            .tasks__icon {
+                color: red;
+            }
+        }
+    }
+    &__icon {
+        color: $second-color;
+        transition: .3s all; 
+    }
+}
